@@ -22,7 +22,7 @@ export default function CreateExpenseForm({onCreateFooter}){
         setEditable(false)
 
         
-        let result = await fetch("https://history-api-production.up.railway.app/api/comment",{
+        let result = await fetch("https://fragile-fly-school-uniform.cyclic.app/api/comment",{
       method:"post",
       body:JSON.stringify({name:newName, idea:newIdea, opinion:newOpinion}),
       headers:{
