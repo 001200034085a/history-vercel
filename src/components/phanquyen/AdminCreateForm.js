@@ -67,7 +67,7 @@ export default function AdminCreateForm({onCreateForm}){
        setStar("")
 
     console.warn(name, image, dob, pob, description, position, career, evaluate, prize, address, country, date, period, medal, honnors, url, imageVideo, likeVideo, disLikeVideo, like, dislike, star);
-    let result = await fetch("https://history-api-production.up.railway.app/api/history",{
+    let result = await fetch("https://fragile-fly-school-uniform.cyclic.app/api/history",{
       method:"post",
       body:JSON.stringify({name, image, dob, pob, description, position, career, evaluate, prize, address, country, date, period, medal, honnors, url, imageVideo, likeVideo, disLikeVideo, like, dislike, star}),
       headers:{
