@@ -10,7 +10,7 @@ export default function SignupFrom(){
 
   const handleRegister = async()=>{
     console.warn(name,email,password);
-    let result = await fetch("hhttps://history-api-production.up.railway.app/api/users",{
+    let result = await fetch("https://fragile-fly-school-uniform.cyclic.app/api/users",{
       method:"post",
       body:JSON.stringify({name,email,password}),
       headers:{
