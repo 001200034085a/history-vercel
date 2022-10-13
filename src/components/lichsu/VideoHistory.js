@@ -49,7 +49,7 @@ export default function VideoHistory (){
             <br/>
             <hr style={{width:"90%", margin:"auto"}}/>
             <br/>
-            <input type="text" style={{width:"20%", height:"40px", borderRadius:"10px", marginLeft:"1%", border:"0.5px solid blue"}} placeholder="tìm kiếm video" onChange={(event)=>setKeyword(event.target.value)} />
+            <input type="text" style={{width:"40%", height:"40px", borderRadius:"10px", marginLeft:"1%", border:"0.5px solid blue"}} placeholder="tìm kiếm video" onChange={(event)=>setKeyword(event.target.value)} />
             
             <div style={{display:"flex", flexWrap:"wrap"}} className="video-history" >
                
