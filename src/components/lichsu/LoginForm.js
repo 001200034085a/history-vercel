@@ -18,7 +18,7 @@ const LoginForm = ({ setToken }) => {
    
 
     setErrror(null)
-    axios.post("https://history-api-production.up.railway.app/api/users/login",{
+    axios.post("https://fragile-fly-school-uniform.cyclic.app/api/users/login",{
       email:email, 
       password:password
     }).then((response)=>{
