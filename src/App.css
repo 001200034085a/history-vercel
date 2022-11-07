@@ -641,6 +641,11 @@ opacity: 0.5;
 background: rgb(104, 98, 98);
 } 
 
+.slide-image img{
+   width:350px;
+   height:170px;
+}
+
 @media screen  and (max-width:900px){
  .content-history{
      flex-direction: column;
@@ -652,6 +657,10 @@ background: rgb(104, 98, 98);
      width: 20px;
      height: 20px;
      color: #19a2c1;
+ }
+ .slide-image img {
+   width:150px ;
+   height:70px;
  }
  
 } 
