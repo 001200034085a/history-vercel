@@ -22,6 +22,7 @@ export default function ContentSlide(){
 
     return(
         <Swiper
+        className="slide-image"
         effect="coverflow"
         modules={[Navigation, Pagination, Scrollbar, A11y, EffectCoverflow]}
       spaceBetween={50}
@@ -35,7 +36,7 @@ export default function ContentSlide(){
       {data.map((item)=>{
         return(
             <SwiperSlide key={item._id} >
-                <img style={{width:"350px", height:"200px"}} src={item.image} />
+                <img  src={item.image} />
             </SwiperSlide>
         )
       })}
