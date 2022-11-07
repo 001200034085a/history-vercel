@@ -34,7 +34,7 @@ export default function ContentSlide(){
     >
       {data.map((item)=>{
         return(
-            <SwiperSlide key={item.id} >
+            <SwiperSlide key={item._id} >
                 <img style={{width:"350px", height:"200px"}} src={item.image} />
             </SwiperSlide>
         )
