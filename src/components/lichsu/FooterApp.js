@@ -44,7 +44,7 @@ export default function FooterApp(){
             <div className="footerlist">
             {data.map(item=>{
                    return(
-                     <FooterItem key={item.id}
+                     <FooterItem key={item._id}
                       id={item.id}
                        name={item.name}
                         idea={item.idea} 
