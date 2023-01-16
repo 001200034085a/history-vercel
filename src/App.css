@@ -644,6 +644,7 @@ background: rgb(104, 98, 98);
 .slide-image img{
    width:350px;
    height:170px;
+   margin-bottom: 50px;
 }
 
 @media screen  and (max-width:900px){
@@ -661,6 +662,7 @@ background: rgb(104, 98, 98);
  .slide-image img {
    width:150px ;
    height:70px;
+   margin-bottom: 50px;
  }
  
 } 
