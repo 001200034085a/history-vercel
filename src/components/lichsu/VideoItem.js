@@ -90,10 +90,10 @@ export default function VideoItem({ }){
         <div  style={{ margin:"1%"}}>
             {found && 
             <div>
-               <div><ReactPlayer url={found.url} controls={true} light={true} width={"100%"} /></div>
+               <div><ReactPlayer url={found.url} onStart controls={true} light={true} width={"100%"} /></div>
                <h1 style={{color:"grey"}}>{found.name}</h1>
-               <a style={{color: !show ? "grey":"blue"}} onClick={()=>onLikeVideo(_id)}><LikeOutlined style={{ fontSize: '30px' }} />{found.likeVideo}</a>&nbsp;&nbsp;
-               <a style={{color: !show2 ? "grey":"red"}} onClick={()=>onDisLikeVideo(_id)}><DislikeOutlined style={{ fontSize: '30px' }} />{found.disLikeVideo}</a> 
+               <a style={{color: !show ? "grey":"blue"}} onClick={()=>onLikeVideo(_id)}><LikeOutlined style={{ fontSize: '20px' }} />{found.likeVideo}</a>&nbsp;&nbsp;
+               <a style={{color: !show2 ? "grey":"red"}} onClick={()=>onDisLikeVideo(_id)}><DislikeOutlined style={{ fontSize: '20px' }} />{found.disLikeVideo}</a> 
             </div> 
             }
             
