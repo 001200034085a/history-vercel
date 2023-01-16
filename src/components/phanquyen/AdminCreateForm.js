@@ -81,7 +81,7 @@ export default function AdminCreateForm({onCreateForm}){
     return(
         <form onSubmit={handleCreateForm} style={{background:"grey"}} className="admin-create-form">
             {!editable && <div style={{background:"white"}}>
-                <UserAddOutlined onClick={()=>setEditable(true)} />
+                <UserAddOutlined style={{ fontSize: '20px' }} onClick={()=>setEditable(true)} />
             </div>}
             {editable &&
             <div style={{margin:"0 6%", padding:"5%"}}>
@@ -174,8 +174,8 @@ export default function AdminCreateForm({onCreateForm}){
                <input type="text" placeholder="star" style={{width:"90%", height:"50px"}} onChange={(event)=>setStar(event.target.value)}/>
             </div><br/>
             <div>
-                <button  type="submit"><SaveOutlined /></button>
-                <a type="button" onClick={()=>setEditable(false)}><FullscreenExitOutlined /></a>
+                <button ><SaveOutlined style={{ fontSize: '20px' }} /></button>
+                <a type="button" onClick={()=>setEditable(false)}><FullscreenExitOutlined style={{ fontSize: '20px' }} /></a>
             </div>
         </div>}
             
