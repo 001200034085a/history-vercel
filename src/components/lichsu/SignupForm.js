@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { setUserSession } from "../Utils/Common";
 import axios from "axios";
+import { Input } from "antd";
 
 
 export default function SignupFrom(){
@@ -48,15 +49,15 @@ export default function SignupFrom(){
       <h1>Register</h1><br/>
       <div>
         Name<br/>
-        <input type="text" value={name} style={{border:"1px solid black", width:"60%", height:"50px"}} onChange={(e)=>setName(e.target.value)} />
+        <Input type="text" value={name} style={{ borderRadius:'7px', width:"60%", height:"50px"}} onChange={(e)=>setName(e.target.value)} />
       </div><br/>
       <div>
         Email<br/>
-        <input type="email" value={email} style={{border:"1px solid black", width:"60%", height:"50px"}} onChange={(e)=>setEmail(e.target.value)} />
+        <Input type="email" value={email} style={{ borderRadius:'7px', width:"60%", height:"50px"}} onChange={(e)=>setEmail(e.target.value)} />
       </div><br/>
       <div>
         Password<br/>
-        <input type="password" value={password} style={{border:"1px solid black", width:"60%", height:"50px"}} onChange={(e)=>setPassword(e.target.value)} />
+        <Input type="password" value={password} style={{ borderRadius:'7px', width:"60%", height:"50px"}} onChange={(e)=>setPassword(e.target.value)} />
       </div><br/>
       {error && <div style={{color:"red"}}>{error}</div>}
       <div>
