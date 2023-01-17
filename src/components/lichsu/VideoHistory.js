@@ -4,6 +4,7 @@ import HistoryData from '../../data/HistoryData';
 import VideoItem from './VideoItem';
 import {Link, Outlet} from "react-router-dom";
 import axios from 'axios';
+import { Input } from 'antd';
 
 
 
@@ -49,7 +50,7 @@ export default function VideoHistory (){
             <br/>
             <hr style={{width:"90%", margin:"auto"}}/>
             <br/>
-            <input type="text" style={{width:"40%", height:"40px", borderRadius:"10px", marginLeft:"1%", border:"0.5px solid blue"}} placeholder="tìm kiếm video" onChange={(event)=>setKeyword(event.target.value)} />
+            <Input type="text" style={{ width:"50%", marginLeft:'25%'}}  placeholder="tìm kiếm video" onChange={(event)=>setKeyword(event.target.value)} />
             
             <div style={{display:"flex", flexWrap:"wrap"}} className="video-history" >
                
