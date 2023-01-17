@@ -30,11 +30,11 @@ export default function AdminCreateForm({onCreateForm}){
     const [honnors, setHonnors] = useState("");
     const [url, setUrl] = useState("");
     const [imageVideo, setImageVideo] = useState("");
-    const [likeVideo, setLikeVideo] = useState("");
-    const [disLikeVideo, setDislikeVideo] = useState("");
-    const [like, setLike] = useState("");
-    const [dislike, setDislike] = useState("");
-    const [star, setStar] = useState("");
+    const [likeVideo, setLikeVideo] = useState(0);
+    const [disLikeVideo, setDislikeVideo] = useState(0);
+    const [like, setLike] = useState(0);
+    const [dislike, setDislike] = useState(0);
+    const [star, setStar] = useState(0);
 
     
 
@@ -87,73 +87,73 @@ export default function AdminCreateForm({onCreateForm}){
             <div style={{margin:"0 6%", padding:"5%"}}>
             <div>
                
-               <input type="text" placeholder="ảnh" style={{width:"90%", height:"50px"}} onChange={(event)=>setImage(event.target.value)} />
+               <Input type="text" placeholder="ảnh" style={{width:"90%", height:"50px"}} onChange={(event)=>setImage(event.target.value)} />
             </div><br/>
             <div>
                
-               <input type="text" placeholder="tên" style={{width:"90%", height:"50px"}} onChange={(event)=>setName(event.target.value)} />
+               <Input type="text" placeholder="tên" style={{width:"90%", height:"50px"}} onChange={(event)=>setName(event.target.value)} />
             </div><br/>
             <div>
                
-               <input type="date" placeholder="ngày sinh" style={{width:"90%", height:"50px"}} onChange={(event)=>setDob(event.target.value)}/>
+               <Input type="date" placeholder="ngày sinh" style={{width:"90%", height:"50px"}} onChange={(event)=>setDob(event.target.value)}/>
             </div><br/>
             <div>
                
-               <input type="text" placeholder="danh tính" style={{width:"90%", height:"50px"}} onChange={(event)=>setPob(event.target.value)}/>
+               <Input type="text" placeholder="danh tính" style={{width:"90%", height:"50px"}} onChange={(event)=>setPob(event.target.value)}/>
             </div><br/>
             <div>
                
-               <input type="text" placeholder="xuất thân" style={{width:"90%", height:"50px"}} onChange={(event)=>setDescription(event.target.value)}/>
+               <Input type="text" placeholder="xuất thân" style={{width:"90%", height:"50px"}} onChange={(event)=>setDescription(event.target.value)}/>
             </div><br/>
             <div>
                 
-                <input type="text" placeholder="quê quán" style={{width:"90%", height:"50px"}} onChange={(event)=>setAddress(event.target.value)}/>
+                <Input type="text" placeholder="quê quán" style={{width:"90%", height:"50px"}} onChange={(event)=>setAddress(event.target.value)}/>
             </div><br/>
             <div>
               
-               <input type="text" placeholder="quốc gia" style={{width:"90%", height:"50px"}} onChange={(event)=>setCountry(event.target.value)}/>
+               <Input type="text" placeholder="quốc gia" style={{width:"90%", height:"50px"}} onChange={(event)=>setCountry(event.target.value)}/>
             </div><br/>
             <div>
                
-               <input type="text" placeholder="date" style={{width:"90%", height:"50px"}} onChange={(event)=>setDate(event.target.value)}/>
+               <Input type="text" placeholder="date" style={{width:"90%", height:"50px"}} onChange={(event)=>setDate(event.target.value)}/>
             </div><br/>
             <div>
                
-               <input type="text" placeholder="chức vụ" style={{width:"90%", height:"50px"}} onChange={(event)=>setPosition(event.target.value)}/>
+               <Input type="text" placeholder="chức vụ" style={{width:"90%", height:"50px"}} onChange={(event)=>setPosition(event.target.value)}/>
             </div><br/>
             <div>
                 
-                <input type="text" placeholder="thời kỳ" style={{width:"90%", height:"50px"}} onChange={(event)=>setPeriod(event.target.value)}/>
+                <Input type="text" placeholder="thời kỳ" style={{width:"90%", height:"50px"}} onChange={(event)=>setPeriod(event.target.value)}/>
             </div><br/>
             <div>
                 
-                <input type="text" placeholder="chiến tích" style={{width:"90%", height:"50px"}} onChange={(event)=>setCareer(event.target.value)}/>
+                <Input type="text" placeholder="chiến tích" style={{width:"90%", height:"50px"}} onChange={(event)=>setCareer(event.target.value)}/>
             </div><br/>
             <div>
                 
-                <input type="text" placeholder="cống hiến" style={{width:"90%", height:"50px"}} onChange={(event)=>setEvaluate(event.target.value)}/>
+                <Input type="text" placeholder="cống hiến" style={{width:"90%", height:"50px"}} onChange={(event)=>setEvaluate(event.target.value)}/>
             </div><br/>
             <div>
                 
-                <input type="text" placeholder="vinh danh" style={{width:"90%", height:"50px"}} onChange={(event)=>setPrize(event.target.value)}/>
+                <Input type="text" placeholder="vinh danh" style={{width:"90%", height:"50px"}} onChange={(event)=>setPrize(event.target.value)}/>
             </div><br/>
             <div>
                
-               <input type="text" placeholder="honnors" style={{width:"90%", height:"50px"}} onChange={(event)=>setHonnors(event.target.value)}/>
+               <Input type="text" placeholder="honnors" style={{width:"90%", height:"50px"}} onChange={(event)=>setHonnors(event.target.value)}/>
             </div><br/>
             <div>
                
-               <input type="text" placeholder="huân chương" style={{width:"90%", height:"50px"}} onChange={(event)=>setMedal(event.target.value)}/>
+               <Input type="text" placeholder="huân chương" style={{width:"90%", height:"50px"}} onChange={(event)=>setMedal(event.target.value)}/>
             </div><br/>
             <div>
                
-               <input type="text" placeholder="url" style={{width:"90%", height:"50px"}} onChange={(event)=>setUrl(event.target.value)}/>
+               <Input type="text" placeholder="url" style={{width:"90%", height:"50px"}} onChange={(event)=>setUrl(event.target.value)}/>
             </div><br/>
             <div>
                
-               <input type="text" placeholder="imageVideo" style={{width:"90%", height:"50px"}} onChange={(event)=>setImageVideo(event.target.value)}/>
+               <Input type="text" placeholder="imageVideo" style={{width:"90%", height:"50px"}} onChange={(event)=>setImageVideo(event.target.value)}/>
             </div><br/>
-            <div>
+            {/* <div>
                
                <input type="text" placeholder="LikeVideo" style={{width:"90%", height:"50px"}} onChange={(event)=>setLikeVideo(event.target.value)}/>
             </div><br/>
@@ -172,7 +172,7 @@ export default function AdminCreateForm({onCreateForm}){
             <div>
                
                <input type="text" placeholder="star" style={{width:"90%", height:"50px"}} onChange={(event)=>setStar(event.target.value)}/>
-            </div><br/>
+            </div><br/> */}
             <div>
                 <button ><SaveOutlined style={{ fontSize: '20px' }} /></button>
                 <a type="button" onClick={()=>setEditable(false)}><FullscreenExitOutlined style={{ fontSize: '20px' }} /></a>
