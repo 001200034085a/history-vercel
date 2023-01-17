@@ -2,6 +2,7 @@ import React, { useContext, useState, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import { setUserSession } from "../Utils/Common";
 import axios from "axios";
+import { Input } from "antd";
 
 
 
@@ -32,22 +33,22 @@ const LoginForm = ({ setToken }) => {
         setErrror("Something went wrong. Please try again later")
       }
     })
-  }
+  } 
 
   return(
-   <div style={{marginLeft:"20%"}}>
+    <div style={{marginLeft:"20%"}}>
     <h1>Login</h1><br/>
     <div>
       Email<br/>
-      <input type ="email" style={{border:"1px solid black", width:"60%", height:"50px"}} onChange={(e)=>setEmail(e.target.value)} />
+      <Input type ="email" style={{ borderRadius:'7px', width:"60%", height:"50px"}} onChange={(e)=>setEmail(e.target.value)} />
     </div><br/>
     <div>
       PassWord<br/>
-      <input type ="password" style={{border:"1px solid black", width:"60%", height:"50px"}} onChange={(e)=>setPassword(e.target.value)}/>
+      <Input type ="password" style={{ borderRadius:"7px", width:"60%", height:"50px"}} onChange={(e)=>setPassword(e.target.value)}/>
     </div><br/>
     {error && <div style={{color:"red"}}>{error}</div>}
     <div>
-      <input onClick={handleLogin} type="button" value="Login" style={{border:"1px solid black", width:"60%", height:"50px"}} />
+      <Input onClick={handleLogin} type="button" value="Login" style={{ background:'#4ee', width:"60%", height:"50px"}} />
     </div>
    </div>
   )
