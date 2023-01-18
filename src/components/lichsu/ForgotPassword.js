@@ -8,10 +8,10 @@ export default function ForgotPassword(){
 
     const handleForgot = async(e)=>{
         
-        axios.post("localhost:5000/api/users/forgot-password",{
+        axios.post("http://localhost:5000/api/users/forgot-password",{
           email:email
         })
-        document.write(`<h1>kiểm tra email đổi mật khẩu</h1><a href="https://history-vercel.vercel.app/login">quay về login</a>`)
+        document.write(`<h1>kiểm tra email đổi mật khẩu</h1><a href="http://localhost:3000//login">quay về login</a>`)
       } 
  
     return(
