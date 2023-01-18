@@ -8,7 +8,7 @@ export default function ForgotPassword(){
 
     const handleForgot = async(e)=>{
         
-        axios.post("https://fragile-fly-school-uniform.cyclic.app/api/users/forgot-password",{
+        axios.post("localhost:5000/api/users/forgot-password",{
           email:email
         })
         document.write(`<h1>kiểm tra email đổi mật khẩu</h1><a href="https://history-vercel.vercel.app/login">quay về login</a>`)
