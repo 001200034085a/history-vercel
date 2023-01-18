@@ -13,6 +13,7 @@ import HistoryDetai from "./HistoryDetai";
 import VideoItem from './VideoItem';
 import { getToken, getUser, removeUserSession, setUserSession } from "../Utils/Common";
 import axios from "axios";
+import ForgotPassword from "./ForgotPassword";
 
 
 export default function HistoryApp(){
@@ -38,7 +39,8 @@ export default function HistoryApp(){
         <Route path="/signup" element={<SignupForm/>}></Route>
         <Route path="*" element={<h1>404 Not Found !!!</h1>}></Route>
         <Route path={"/nv"} element={<ContentHistory/>} ></Route>
-        <Route path={"/nv/:_id"} element={<HistoryDetai/>} > </Route>
+        <Route path={"/nv/:_id"} element={<HistoryDetai/>} ></Route>
+        <Route path={"/forgot-password"} element={<ForgotPassword />}></Route>
       </Routes>
 
     </BrowserRouter>
