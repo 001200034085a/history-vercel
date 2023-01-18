@@ -51,7 +51,7 @@ const LoginForm = ({ setToken }) => {
       <Input onClick={handleLogin} type="button" value="Login" style={{ background:'#4ee', width:"60%", height:"50px"}} />
     </div><br/><br/>
     <div>
-      <a href="https://localhost:3000/forgot-password">quên mật khẩu</a>
+      <a href="http://localhost:3000/forgot-password">quên mật khẩu</a>
     </div>
    </div>
   )
