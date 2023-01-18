@@ -3,16 +3,15 @@ import React, { useState } from "react";
 import axios from "axios";
 
 export default function ForgotPassword(){
-    const [error, setErrror] = useState(null);
     const [email, setEmail] = useState("");
 
 
     const handleForgot = async(e)=>{
-        setErrror(null)
-        axios.post("https://fragile-fly-school-uniform.cyclic.app/api/users/forgot-password",{
-          email:email,
+        
+        axios.post("http://localhost:5000/api/users/forgot-password",{
+          email:email
         })
-        document.write(`<h1>kiểm tra email đổi mật khẩu</h1><a href="https://history-vercel.vercel.app/login">quay về login</a>`)
+        document.write(`<h1>kiểm tra email đổi mật khẩu</h1><a href="http://localhost:3000/login">quay về login</a>`)
       } 
  
     return(
