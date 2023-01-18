@@ -49,6 +49,9 @@ const LoginForm = ({ setToken }) => {
     {error && <div style={{color:"red"}}>{error}</div>}
     <div>
       <Input onClick={handleLogin} type="button" value="Login" style={{ background:'#4ee', width:"60%", height:"50px"}} />
+    </div><br/><br/>
+    <div>
+      <a href="https://history-vercel.vercel.app/forgot-password">quên mật khẩu</a>
     </div>
    </div>
   )
