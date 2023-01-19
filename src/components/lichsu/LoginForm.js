@@ -19,7 +19,7 @@ const LoginForm = ({ setToken }) => {
    
 
     setErrror(null)
-    axios.post("https://fragile-fly-school-uniform.cyclic.app/api/users/login",{
+    axios.post("https://good-eel-visor.cyclic.app/api/users/login",{
       email:email, 
       password:password
     }).then((response)=>{
