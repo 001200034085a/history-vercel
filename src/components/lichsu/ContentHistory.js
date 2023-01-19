@@ -41,25 +41,24 @@ export default function ContentHistory(){
           {isLoading ? <h1>Loading...</h1>:<div> 
              <h2>Danh sách các anh hùng vn</h2>
              
-             <input type="text" placeholder="tìm kiếm" onChange={(event)=>setKeyword(event.target.value)} />
-             <Container>
-               <Row>
-                   <Col>
-                        <ul className="history-list" >
-                            {result.map(history=><li key={history.id} >
+             <input type="text" placeholder="tìm kiếm" onChange={(event)=>setKeyword(event.target.value)} /><br/>
+             <div>
+               <div> 
+                   <table  >
+                        <ul style={{display:'flex',  flexWrap:"wrap"}}>
+                            {result.map(history=><a key={history.id} style={{marginRight:"5%", position:'none'}}>
                                 <Link to={''+history._id}>
                                 {history.name}
                                 </Link>
-                                
-                            </li>
+                            </a>
                             )}
                        </ul>
-                   </Col>
-                {/* <Col>
-                    <Outlet />
-                </Col> */}
-               </Row>
-           </Container>
+                   </table> 
+               </div>
+            </div>
+             <div>
+                <Outlet/>
+              </div>
           </div> }
         </div>
     )
