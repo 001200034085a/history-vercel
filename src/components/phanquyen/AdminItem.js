@@ -65,7 +65,7 @@ export default function AdminItem({_id,name,image,dob,pob,description,address,co
         setNewMedal('');
 
         console.warn(newImage,newName,newDob,newPob,newDescription,newAddress,newCountry,newDate,newPosition,newPeriod,newCareer,newEvaluate,newPrize,newMedal,newHonnors,newUrl,newImageVideo,newLikeVideo,newDisLikeVideo,newLike,newDislike,newStar);
-    let result = await fetch(`https://fragile-fly-school-uniform.cyclic.app/api/history/${_id}`,{
+    let result = await fetch(`https://good-eel-visor.cyclic.app/api/history/${_id}`,{
       method:"put",
       body:JSON.stringify({image:newImage, name:newName, dob:newDob, pob:newPob, description:newDescription, address:newAddress, country:newCountry, date:newDate, position:newPosition, period:newPeriod, career:newCareer, evaluate:newEvaluate, prize:newPrize, medal:newMedal, honnors:newHonnors, url:newUrl, imageVideo:newImageVideo, likeVideo:newLikeVideo, dislikeVideo:newDisLikeVideo, like:newLike, dislike:newDislike, star:newStar}),
       headers:{
@@ -81,7 +81,7 @@ export default function AdminItem({_id,name,image,dob,pob,description,address,co
            return item._id !=itemId
        })
        setData(remove);
-        let result = await fetch(`https://fragile-fly-school-uniform.cyclic.app/api/history/${_id}`,{
+        let result = await fetch(`https://good-eel-visor.cyclic.app/api/history/${_id}`,{
         method:"delete",
         headers:{
             "Content-Type":'application/json'
