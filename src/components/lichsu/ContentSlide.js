@@ -11,7 +11,7 @@ import 'swiper/css/scrollbar';
 export default function ContentSlide(){
     const [data, setData] = useState([]);
     const CallApi = async()=>{
-        await axios.get("https://fragile-fly-school-uniform.cyclic.app/api/history").then((response)=>{
+        await axios.get("https://good-eel-visor.cyclic.app/api/history").then((response)=>{
             setData(response.data);
         })
     }
