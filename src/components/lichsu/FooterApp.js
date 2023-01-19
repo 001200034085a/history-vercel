@@ -10,7 +10,7 @@ export default function FooterApp(){
     const CallApi = async()=>{
         
         
-        await axios.get('https://fragile-fly-school-uniform.cyclic.app/api/comment')
+        await axios.get('https://good-eel-visor.cyclic.app/api/comment')
         .then(function (response) {
           // handle success
           setData(response.data)
