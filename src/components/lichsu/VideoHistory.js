@@ -17,7 +17,7 @@ export default function VideoHistory (){
     const CallApi = async()=>{
         setIsLoading(true);
         
-       await axios.get('https://fragile-fly-school-uniform.cyclic.app/api/history')
+       await axios.get('https://good-eel-visor.cyclic.app/api/history')
        .then(function (response) {
          // handle success
          console.log(response.data);
