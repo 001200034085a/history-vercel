@@ -14,7 +14,7 @@ export default function SignupFrom(){
 
   const handleRegister = async()=>{
     console.warn(name,email,password);
-    // let result = await fetch("https://fragile-fly-school-uniform.cyclic.app/api/users",{
+    // let result = await fetch("https://good-eel-visor.cyclic.app/api/users",{
     //   method:"post",
     //   body:JSON.stringify({name,email,password}),
     //   headers:{
@@ -26,7 +26,7 @@ export default function SignupFrom(){
     // alert("đăng ký thành công");
 
     setErrror(null)
-    axios.post("https://fragile-fly-school-uniform.cyclic.app/api/users",{
+    axios.post("https://good-eel-visor.cyclic.app/api/users",{
       name:name,
       email:email, 
       password:password
