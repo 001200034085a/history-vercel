@@ -141,6 +141,7 @@ border: 1px solid rgb(53, 53, 230);
 .list-history{
  display: flex;
  flex-wrap: wrap;
+ justify-content: space-around;
 }
 
 .contentItem{
@@ -664,5 +665,6 @@ background: rgb(104, 98, 98);
    height:70px;
    margin-bottom: 50px;
  }
+ 
  
 } 
