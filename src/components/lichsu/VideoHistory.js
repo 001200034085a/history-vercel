@@ -43,7 +43,10 @@ export default function VideoHistory (){
 
     return(
         <div>
-        {isLoading ? <h1>Loading...</h1>:
+        {isLoading ? <div className='center'>
+          <div className='ring'></div>
+          <span>Loading...</span>
+        </div>:
         <div>
             {/* <ReactPlayer url='https://www.youtube.com/watch?v=ysz5S6PUM-U' controls={true} light={true} />
             <ReactPlayer url='https://www.youtube.com/watch?v=uaN1fwR_CRk' controls={true} light={true} /> */}
@@ -51,12 +54,11 @@ export default function VideoHistory (){
             <hr style={{width:"90%", margin:"auto"}}/>
             <br/>
             <Input type="text" style={{ width:"50%", marginLeft:'25%'}}  placeholder="tìm kiếm video" onChange={(event)=>setKeyword(event.target.value)} />
-            
             <div style={{display:"flex", flexWrap:"wrap"}} className="video-history" >
-               
+              
                 {result.map(item=>{
                 return(
-                    <Link key={item._id} style={{margin:"1%"}} to={''+item._id}>    
+                  <Link key={item._id} style={{margin:"1%"}} to={''+item._id}>    
                     {/* <VideoItem
                     key={item.id}
                     id={item.id}
@@ -69,7 +71,7 @@ export default function VideoHistory (){
                      /> */}
                      <img src={item.imageVideo} width={"400px"} height={"250px"} style={{margin:"1%",borderRadius:"5px"}} />
                      <h1 style={{color:"grey"}}>{item.name}</h1>
-                     </Link>            
+                   </Link>        
                 )
                 })}
 
