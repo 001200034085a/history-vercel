@@ -648,6 +648,47 @@ background: rgb(104, 98, 98);
    margin-bottom: 50px;
 }
 
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+}
+.ring{
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  animation: ring 2s linear;
+}
+@keyframes ring{
+  0%{
+    transform: rotate(0deg);
+    box-shadow: 1px 2px 2px #1767f0;
+  }
+  50%{
+    transform: rotate(180deg);
+    box-shadow: 1px 2px 2px rgb(245, 15, 15);
+  }
+  100%{
+    transform: rotate(360deg);
+    box-shadow: 1px 2px 2px rgb(236, 74, 15);
+  }
+}
+.ring::before{
+  position: absolute;
+  content: '';
+  left:0;
+  top:0;
+  height: 100%;
+  width:100%;
+  border-radius: 50%;
+  box-shadow: 1px 1px 5px rgba(red, green, blue, .3);
+}
+.center span{
+  color:#737373;
+}
+
 @media screen  and (max-width:900px){
  .content-history{
      flex-direction: column;
