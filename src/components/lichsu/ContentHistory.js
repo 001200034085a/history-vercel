@@ -38,7 +38,10 @@ export default function ContentHistory(){
 
     return(
         <div className="content-history">
-          {isLoading ? <h1>Loading...</h1>:<div> 
+          {isLoading ? <div className='center'>
+          <div className='ring'></div>
+          <span>Loading...</span>
+        </div>:<div> 
              <h2>Danh sách các anh hùng vn</h2>
              
              <input type="text" placeholder="tìm kiếm" onChange={(event)=>setKeyword(event.target.value)} /><br/>
