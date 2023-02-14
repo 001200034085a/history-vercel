@@ -75,13 +75,15 @@ useEffect(()=>{
                     })
                     result = await result.json();
                 }  
+
             }
 
         }
         setPlus(!plus);
         setData(newItem);
     
-    }
+    };
+
 
     return (
         <div className='thoi-ky' >
@@ -106,7 +108,10 @@ useEffect(()=>{
                     <option>1924</option>
                 </select>
             </div>
-            {isLoading && <h1>Loading...</h1>}
+            {isLoading && <div className='center'>
+          <div className='ring'></div>
+          <span>Loading...</span>
+        </div>}
             <div >
 
                 {/* {result.map(item=>{
