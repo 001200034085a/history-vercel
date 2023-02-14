@@ -52,7 +52,10 @@ useEffect(()=>{
            />
         )
       })} */}
-      {isLoading && <h1>Loading...</h1>}
+      {isLoading && <div className='center'>
+          <div className='ring'></div>
+          <span>Loading...</span>
+        </div>}
        <List
             itemLayout="vertical"
             size="large"
