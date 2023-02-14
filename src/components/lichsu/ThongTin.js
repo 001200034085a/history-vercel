@@ -54,7 +54,10 @@ const ThongTin = ({currentUser}) => {
         <div className='thong-tin' >
             <h2> Thông Tin Các Anh Hùng</h2>
             <Input type="text" style={{ width:"50%", marginLeft:'25%'}}  placeholder="tìm kiếm video" onChange={(event)=>setKeyword(event.target.value)} />
-            {isLoading && <h1>Loading...</h1>}
+            {isLoading && <div className='center'>
+          <div className='ring'></div>
+          <span>Loading...</span>
+        </div>}
             {/* {result.map(item=>{
                 return(
                     <ThongTin1 key={item.id}
