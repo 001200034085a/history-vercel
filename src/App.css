@@ -706,6 +706,8 @@ background: rgb(104, 98, 98);
    height:70px;
    margin-bottom: 50px;
  }
- 
+ .video-history img{
+  width: 100%;
+ }
  
 } 
