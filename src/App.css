@@ -707,7 +707,7 @@ background: rgb(104, 98, 98);
    margin-bottom: 50px;
  }
  .video-history img{
-  width: 100%;
+  width: 100vw;
  }
  
 } 
