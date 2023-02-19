@@ -4,6 +4,7 @@
   opacity: 0.8;
 }
 
+
 .header-bar{
  background-color: #1a1919;
 }
@@ -142,7 +143,10 @@ border: 1px solid rgb(53, 53, 230);
  display: flex;
  flex-wrap: wrap;
  justify-content: space-around;
+ align-content: space-around;
+ flex:1
 }
+
 
 .contentItem{
  margin: 10px 30px;
@@ -664,15 +668,23 @@ background: rgb(104, 98, 98);
 @keyframes ring{
   0%{
     transform: rotate(0deg);
-    box-shadow: 1px 2px 2px #1767f0;
+    box-shadow: 1px 3px 2px #f01717;
+  }
+  25%{
+    transform: rotate(90deg);
+    box-shadow: 1px 3px 2px #f0ec17;
   }
   50%{
     transform: rotate(180deg);
-    box-shadow: 1px 2px 2px rgb(245, 15, 15);
+    box-shadow: 1px 3px 2px rgb(107, 245, 15);
+  }
+  75%{
+    transform: rotate(270deg);
+    box-shadow: 1px 3px 2px #1775f0;
   }
   100%{
     transform: rotate(360deg);
-    box-shadow: 1px 2px 2px rgb(236, 74, 15);
+    box-shadow: 1px 3px 2px rgb(199, 15, 236);
   }
 }
 .ring::before{
