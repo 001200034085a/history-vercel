@@ -35,6 +35,7 @@ export default function HistoryDetai(){
     },[]);
 
     const found = data.find((product)=>_id==product._id);
+    console.log(found);
    
     return(
        
